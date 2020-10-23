@@ -3,15 +3,15 @@ import math
 
 
 trees = 333
-shadedTrees = math.ceil((trees/3)*2) # Het antwoord is 222
-sunnyTrees = (trees-shadedTrees) # Het antwoord is 111
+shadedTrees = math.ceil((trees/3)*2)
+sunnyTrees = (trees-shadedTrees)
 
 shadeOutputModifier = 80
 
 sunnyTreeOutput = 146
-shadedTreeOutput = (sunnyTreeOutput%shadeOutputModifier) #Het antwoord is 117
+shadedTreeOutput = (sunnyTreeOutput%shadeOutputModifier)
 
-sunnyOutput = (sunnyTrees*shadedTreeOutput) #Het antwoord
+sunnyOutput = (sunnyTrees*shadedTreeOutput)
 shadedOutput = (shadedTrees*shadedTreeOutput)
 totalOutput = (trees*sunnyTreeOutput)
 
